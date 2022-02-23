@@ -1,0 +1,7 @@
+{
+    "require": {
+        "symfony/filesystem": "^5.4",
+        "symfony/console": "^5.4",
+        "symfony/dependency-injection": "^5.4"
+    }
+}
