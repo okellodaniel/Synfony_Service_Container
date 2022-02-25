@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Parent Template Layout{% endblock %}</title>
+    </head>
+    <body>
+    {%image '@AppBundle/Resources/public/images/example.jpg'%}
+        <img src="{{ asset('images/example.jpg') }}" alt=""/>
+    {% endimage %}
+
+    {%block javascripts%}
+        {%javascripts '@AppBundle/Resources/public/js/*'%}
+            <script src="{{ asset_url }}"></script>
+        {%endjavascripts%}
+    {%endblock%}
+    </body>
+</html>

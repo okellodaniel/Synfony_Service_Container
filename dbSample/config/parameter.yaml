@@ -1,0 +1,21 @@
+parameters:
+  database_host: localhost
+  database_port: null
+  database_name: dbSample
+  database_user: root
+  database_password: root
+  mailer_transport: smtp
+  mailer_host: localhost
+  mailer_user: null
+  mailer_password: null
+  secret: 0a6b59c4c50ab0029f7e4b8d54a3f9f2a76496db4
+
+  doctrine:
+    dbal:
+    driver: pdo_mysql
+    host: "%database_host%"
+    port: "%database_port%"
+    dbname: "%database_name%"
+    user: "%database_user%"
+    password: "%database_password%"
+    charset: utf8mb4
